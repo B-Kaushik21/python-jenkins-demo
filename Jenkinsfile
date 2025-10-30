@@ -7,7 +7,7 @@ pipeline{
         stage('Checkout Source'){
             steps{
                 echo 'checking out code from git'
-                git branch 'Main','url':'https://github.com/B-Kaushik21/python-jenkins-demo.git'
+                git branch:'Main','url':'https://github.com/B-Kaushik21/python-jenkins-demo.git'
             }
         }
         stage('Install Dependencies'){
